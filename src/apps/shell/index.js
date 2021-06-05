@@ -203,7 +203,14 @@ class Shell extends Component {
             mode="desktop"
             items={desktopIcons}
             solidColor={true}
-            onClick={item => this.openWindow(item.appProps.app, item.appProps)}
+            onClick={ item => {
+                    if (item.appProps.app == 'ExternalLinker') {
+                        window.open(item.appProps.url)
+                    } else {
+                        this.openWindow(item.appProps.app, item.appProps)
+                    }
+                }
+            }
           />
           {windows.map(({ appName, appProps, appChildren, windowProps }) => {
             const App = apps[appName];
