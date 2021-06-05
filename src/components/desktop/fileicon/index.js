@@ -39,7 +39,7 @@ class FileIcon extends Component {
         key={key}
       >
         <div class="ui95-file-icon__icon">
-          <Icon size="32" name={icon} classNames="file-icon" />
+          <Icon {...props} size="32" name={icon} classNames="file-icon" />
         </div>
         <Text type="div" classNames="label">
           {label || filename}

@@ -97,7 +97,7 @@ export default {
   })(),
   'My Link': {
     filename: "My Link",
-    icon: "default",
+    url: "https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/256/shop-icon.png",
     appProps: {
       app: "ExternalLinker",
       url: "https://www.google.com"
